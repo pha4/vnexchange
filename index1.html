@@ -171,27 +171,27 @@
 					<div class="form-group">                        
 						<div class="btn-group">
 							<button type="button" id="cboCategories" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-								Tất cả danh mục
+								<span id="spanCategoryText">Tất cả danh mục</span>
 							<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" id="listCategories">
-								<li><a href="#">Tất cả danh mục</a></li>
+								<li><a href="index1.html">Tất cả danh mục</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Đồ Chơi Trẻ Em</a></li>
+								<li><a href="index1.html?danh-muc=1">Đồ Chơi Trẻ Em</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Quần áo nữ</a></li>
+								<li><a href="index1.html?danh-muc=2">Quần áo nữ</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Phụ kiện</a></li>
+								<li><a href="index1.html?danh-muc=3">Phụ kiện</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Đồ dùng gia đình</a></li>
+								<li><a href="index1.html?danh-muc=4">Đồ dùng gia đình</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Quần áo trẻ em</a></li>								
+								<li><a href="index1.html?danh-muc=5">Quần áo trẻ em</a></li>								
 								<li class="divider"></li>
-								<li><a href="#">Đồ dùng nam</a></li>
+								<li><a href="index1.html?danh-muc=6">Đồ dùng nam</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Sách và tạp chí</a></li>
+								<li><a href="index1.html?danh-muc=7">Sách và tạp chí</a></li>
 								<li class="divider"></li>
-								<li><a href="#">Đồ trang điểm</a></li>
+								<li><a href="index1.html?danh-muc=8">Đồ trang điểm</a></li>
 							</ul>
 						</div>
                     </div>
@@ -847,10 +847,11 @@
 		}
         $(function () {
 
+			
             $('#mi-slider').catslider();
 			var category = getUrlVars()["danh-muc"];
 			var categoryText = $($("#listCategories a")[category]).text();
-			$($("#cboCategories")[0]).text(categoryText);
+			$("#spanCategoryText").text(categoryText);
 			$("#h4Category").text($("#h4Category").text() + " " + categoryText);
 			if(typeof category != "undefined")
 			{
