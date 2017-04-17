@@ -328,7 +328,10 @@
         <!-- /.row -->
 		<div class="main box-border" style="margin: 0px 0px 100px 0px;padding: 0px 0px 30px 20px;">
 			<div class="col-md-9">
-				<h4 style="padding: 30px;">Các món đồ liệt kê theo kết quả tìm kiếm/ Danh Mục</h4>			
+				<div style="padding: 20px 0px 0px 0px;">
+					<a href="#">Trang chủ</a> <span id="spanSeperator">></span> <a href="#" id="breadcrumb"></a>
+				</div>
+				<h4 style="padding: 20px;" id="h4Category">Các món đồ liệt kê theo Danh Mục</h4>			
 				<div class="row" style="padding-right: 60px;">
 					<div class="btn-group alg-right-pad">
 						<button type="button" class="btn btn-default"><strong>3005  </strong>món</button>
@@ -829,10 +832,35 @@
     <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
     <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
     <script>
+		// Read a page's GET URL variables and return them as an associative array.
+		function getUrlVars()
+		{
+			var vars = [], hash;
+			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			for(var i = 0; i < hashes.length; i++)
+			{
+				hash = hashes[i].split('=');
+				vars.push(hash[0]);
+				vars[hash[0]] = hash[1];
+			}
+			return vars;
+		}
         $(function () {
 
             $('#mi-slider').catslider();
-			$("#cboCategories");
+			var category = getUrlVars()["danh-muc"];
+			var categoryText = $($("#listCategories a")[category]).text();
+			$($("#cboCategories")[0]).text(categoryText);
+			$("#h4Category").text($("#h4Category").text() + " " + categoryText);
+			if(typeof category != "undefined")
+			{
+				$("#mi-slider").parent().hide();
+				$("#breadcrumb").text(categoryText);
+			}
+			else
+			{
+				$("#spanSeperator").hide();
+			}
         });
 		</script>
 </body>
