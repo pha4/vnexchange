@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -822,6 +822,7 @@
             $('#mi-slider').catslider();
 			var category = getUrlVars()["danh-muc"];
 			var categoryText = $($("#listCategories a")[category]).text();
+			categoryText = categoryText ? categoryText : "Tất cả danh mục";
 			$("#spanCategoryText").text(categoryText);
 			$("#h4Category").text($("#h4Category").text() + " " + categoryText);
 			if(typeof category != "undefined")
