@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -34,83 +34,93 @@
 			{
 				z-index: 1;
 			}
+            .thumbnail-normal {
+                border: 1px solid #e1e1e1;
+                clear: both;
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .thumbnail-active {
+                border: 1px solid #e77600;
+            }
 		</style>
 </head>
 <body class="no-trans">
 	<!-- header start -->
 		<!-- ================ --> 
-		<header class="header fixed clearfix navbar navbar-fixed-top" style="position: unset; background-color: grey;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
+    <header class="header fixed clearfix navbar navbar-fixed-top" style="position: unset; background-color: #185047;padding: 10px 0px 0px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
 
-						<!-- header-left start -->
-						<!-- ================ -->
-						<div class="header-left clearfix">
+                    <!-- header-left start -->
+                    <!-- ================ -->
+                    <div class="header-left clearfix">
 
-							<!-- logo -->
-							<div class="logo smooth-scroll">
-								<a href="#banner"><img id="logo" src="img/logo4-designed.png" alt="Worthy" style="height: 65px;"></a>
-							</div>
+                        <!-- logo -->
+                        <div class="logo smooth-scroll" style="margin: 0px;">
+                            <a href="#banner"><img id="logo" src="img/logo-redesign.png" alt="Worthy" style="height: 90px;"></a>
+                        </div>
 
-							<!-- name-and-slogan -->
-							<div class="site-name-and-slogan smooth-scroll" style="display: none;">
-								<div class="site-name"><a href="#banner">Worthy</a></div>
-								<div class="site-slogan">Free Bootstrap Theme by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a></div>
-							</div>
+                        <!-- name-and-slogan -->
+                        <div class="site-name-and-slogan smooth-scroll" style="display: none;">
+                            <div class="site-name"><a href="#banner">Worthy</a></div>
+                            <div class="site-slogan">Free Bootstrap Theme by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a></div>
+                        </div>
 
-						</div>
-						<!-- header-left end -->
+                    </div>
+                    <!-- header-left end -->
 
-					</div>
-					<div class="col-md-8">
+                </div>
+                <div class="col-md-8">
 
-						<!-- header-right start -->
-						<!-- ================ -->
-						<div class="header-right clearfix">
+                    <!-- header-right start -->
+                    <!-- ================ -->
+                    <div class="header-right clearfix">
 
-							<!-- main-navigation start -->
-							<!-- ================ -->
-							<div class="main-navigation animated">
+                        <!-- main-navigation start -->
+                        <!-- ================ -->
+                        <div class="main-navigation animated">
 
-								<!-- navbar start -->
-								<!-- ================ -->
-								<nav class="navbar navbar-default" role="navigation">
-									<div class="container-fluid">
+                            <!-- navbar start -->
+                            <!-- ================ -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
 
-										<!-- Toggle get grouped for better mobile display -->
-										<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-												<span class="sr-only">Toggle navigation</span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-											</button>
-										</div>
+                                    <!-- Toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
 
-										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-											<ul class="nav navbar-nav navbar-right">												
-												<li><a href="#about">Đăng nhập</a></li>												
-												<li><a href="#portfolio">Đăng ký</a></li>												
-												<li><a href="#contact">Thông tin</a></li>
-											</ul>
-										</div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#about">Đăng nhập</a></li>
+                                            <li><a href="#portfolio">Đăng ký</a></li>
+                                            <li><a href="#contact">Thông tin</a></li>
+                                        </ul>
+                                    </div>
 
-									</div>
-								</nav>
-								<!-- navbar end -->
+                                </div>
+                            </nav>
+                            <!-- navbar end -->
 
-							</div>
-							<!-- main-navigation end -->
+                        </div>
+                        <!-- main-navigation end -->
 
-						</div>
-						<!-- header-right end -->
+                    </div>
+                    <!-- header-right end -->
 
-					</div>
-				</div>
-			</div>
-		</header>
+                </div>
+            </div>
+        </div>
+    </header>
 		<!-- header end -->
     <nav class="navbar navbar-default" role="navigation" style="background: #dfd7c0; border: 1px solid grey; display: none;">
 			
@@ -168,131 +178,28 @@
                 <div class="well well-lg text-center" style="">					
                    Khu vực quảng cáo                                            
                 </div>
-                <div class="main box-border" style="display: none;">
-                    <div id="mi-slider" class="mi-slider" style="margin-top: 10px;">					
-                        <ul>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/1.jpg" alt="img01">
-								<h4>Giày đi rừng, mình dư dùng, cần đổi Iphone 6s hoặc bán 7 chai</h4>								
-                            </a>
-							<span style="color: red; font-weight: bold; display: block;"><span style="color: grey;">Cũ</span> - 7.000.000</span>
-							<span style="font-weight: bold;"><a href="#" style="display: inline;">Lâm Ngô</a> - <span>Lạng Sơn</span></span>							
-							</li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/7.jpg" alt="img01">								
-								<h4>Cần đổi lấy kính Police loại tương tự</h4>								
-                            </a>
-							<span style="color: grey; display: block;">Cũ - 95%</span>
-							<span style="font-weight: bold;"><a href="#" style="display: inline;">Phúc Hà</a> - <span>Cao Bằng</span></span>							
-							</li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/5.jpg" alt="img01">
-								<h4>Nịt da bò Tommy chính hãng </h4>								
-                            </a>
-							<span style="color: green; font-weight: bold; display: block;">Tặng</span>
-							<span style="font-weight: bold;"><a href="#" style="display: inline;">Châu Bùi</a> - <span>Bắc Cạn</span></span>							
-							</li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/4.jpg" alt="img04"><h4>Cần tìm giày hiếm như hình, mua giá cao hoặc đổi Wave tàu 150cc</h4>
-                            </a>
-							<span style="font-weight: bold;"><a href="#" style="display: inline;">Lệ Rơi</a> - <span>Tuyên Quang</span></span>
-							</li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/5.jpg" alt="img05"><h4>Tommny Belt, size 7"</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/6.jpg" alt="img06"><h4>Winter hood, from my daddy</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/7.jpg" alt="img07"><h4>Rayban aviator, just like new</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/8.jpg" alt="img08"><h4>Scarves</h4>
-                            </a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/9.jpg" alt="img09"><h4>Casual</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/10.jpg" alt="img10"><h4>Luxury</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/11.jpg" alt="img11"><h4>Sport</h4>
-                            </a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/12.jpg" alt="img12"><h4>Carry-Ons</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/13.jpg" alt="img13"><h4>Duffel Bags</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/14.jpg" alt="img14"><h4>Laptop Bags</h4>
-                            </a></li>
-                            <li><a href="#">
-                                <img src="assets/ItemSlider/images/15.jpg" alt="img15"><h4>Briefcases</h4>
-                            </a></li>
-                        </ul>
-                        <nav>
-                            <a href="#">Nổi bật</a>
-                            <a href="#">Hàng hiếm</a>
-                            <a href="#">Mới đăng</a>
-                            <a href="#" style="display: none;">Bags</a>
-                        </nav>
-                    </div>                    
-                </div>
                 <br />
             </div>
             <!-- /.col -->			
-            <div class="col-md-3 text-center" style="display: none;">
-                <div class=" col-md-12 col-sm-6 col-xs-6" >
-                    <div class="offer-text">
-                        30% off here
-                    </div>
-                    <div class="thumbnail product-box">
-                        <img src="assets/img/dummyimg.png" alt="" />
-                        <div class="caption">
-                            <h3><a href="#">Samsung Galaxy </a></h3>
-                            <p><a href="#">Ptional dismiss button </a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-md-12 col-sm-6 col-xs-6">
-                    <div class="offer-text2">
-                        30% off here
-                    </div>
-                    <div class="thumbnail product-box">
-                        <img src="assets/img/dummyimg.png" alt="" />
-                        <div class="caption">
-                            <h3><a href="#">Samsung Galaxy </a></h3>
-                            <p><a href="#">Ptional dismiss button </a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- /.col -->
         </div>
         <!-- /.row -->
-		<div class="main box-border" style="margin: 0px 0px 50px 0px;padding: 0px 0px 30px 20px;">
+		<div class="main box-border" id="cknude" style="margin: 0px 0px 50px 0px;padding: 0px 0px 30px 20px; display: none;">
 			<h1 style="padding: 30px; font-size: 30px;">Giày cao gót Charles & Keith, hồng nude chính hãng</h1>
 			<div class="col-md-6">
 				<div class="col-md-2">
-					<div onclick="thumbnailImage_Click(this);" style="width: 42px; height: 42px; border: 1px solid #e77600; clear: both; float: left; margin: 10px; cursor: pointer;">
-						<img src="img/hong nude.jpg" alt="" style="float: left;">
+					<div onclick="thumbnailImage_Click(this, 'cknude1.jpg');" class="thumbnail-normal">
+						<img src="img/cknude thumb1.jpg" alt="" style="float: left;">
 					</div>
-					<div onclick="thumbnailImage_Click(this);" style="width: 42px; height: 42px; clear: both; float: left; margin: 10px;cursor: pointer;border: 1px solid #e1e1e1;">
-						<img src="img/hong nude.jpg" alt="" style="float: left;">
-					</div>
-					<div style="width: 42px; height: 42px; clear: both; float: left; margin: 10px;cursor: pointer;border: 1px solid #e1e1e1;">
-						<img src="img/hong nude.jpg" alt="" style="float: left;">
-					</div>
+                    <div onclick="thumbnailImage_Click(this, 'cknude2.jpg');" class="thumbnail-normal">
+                        <img src="img/cknude thumb2.jpg" alt="" style="float: left;">
+                    </div>
+                    <div onclick="thumbnailImage_Click(this, 'cknude3.jpg');" class="thumbnail-normal">
+                        <img src="img/cknude thumb3.jpg" alt="" style="float: left;">
+                    </div>
 				</div>
 				<div class="col-md-10">				
-					<img src="img/hong nude.jpg" alt="" style="float: left;">
+                    <img src="img/cknude1.jpg" alt="" style="float: left;" class="main-imgage">
 				</div>				
 				<div style="clear: both;"></div>
 			</div>
@@ -317,273 +224,90 @@
 			</div>			
 			<div style="clear: both;"></div>
 		</div>	
-        <div class="row" style="display: none;">
-            <div class="col-md-3">
-                <div>
-                    <a href="#" class="list-group-item active">Electronics
-                    </a>
-                    <ul class="list-group">
-
-                        <li class="list-group-item">Mobile
-						<span class="label label-primary pull-right">234</span>
-                        </li>
-                        <li class="list-group-item">Computers
-						<span class="label label-success pull-right">34</span>
-                        </li>
-                        <li class="list-group-item">Tablets
-                         <span class="label label-danger pull-right">4</span>
-                        </li>
-                        <li class="list-group-item">Appliances
-                             <span class="label label-info pull-right">434</span>
-                        </li>
-                        <li class="list-group-item">Games & Entertainment
-                             <span class="label label-success pull-right">34</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.div -->
-                <div>
-                    <a href="#" class="list-group-item active list-group-item-success">Clothing & Wears
-                    </a>
-                    <ul class="list-group">
-
-                        <li class="list-group-item">Men's Clothing
-                             <span class="label label-danger pull-right">300</span>
-                        </li>
-                        <li class="list-group-item">Women's Clothing
-                             <span class="label label-success pull-right">340</span>
-                        </li>
-                        <li class="list-group-item">Kid's Wear
-                             <span class="label label-info pull-right">735</span>
-                        </li>
-
-                    </ul>
-                </div>
-                <!-- /.div -->
-                <div>
-                    <a href="#" class="list-group-item active">Accessaries & Extras
-                    </a>
-                    <ul class="list-group">
-                        <li class="list-group-item">Mobile Accessaries
-                             <span class="label label-warning pull-right">456</span>
-                        </li>
-                        <li class="list-group-item">Men's Accessaries
-                             <span class="label label-success pull-right">156</span>
-                        </li>
-                        <li class="list-group-item">Women's Accessaries
-                             <span class="label label-info pull-right">400</span>
-                        </li>
-                        <li class="list-group-item">Kid's Accessaries
-                             <span class="label label-primary pull-right">89</span>
-                        </li>
-                        <li class="list-group-item">Home Products
-                             <span class="label label-danger pull-right">90</span>
-                        </li>
-                        <li class="list-group-item">Kitchen Products
-                             <span class="label label-warning pull-right">567</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.div -->
-                <div>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-success"><a href="#">New Offer's Coming </a></li>
-                        <li class="list-group-item list-group-item-info"><a href="#">New Products Added</a></li>
-                        <li class="list-group-item list-group-item-warning"><a href="#">Ending Soon Offers</a></li>
-                        <li class="list-group-item list-group-item-danger"><a href="#">Just Ended Offers</a></li>
-                    </ul>
-                </div>
-                <!-- /.div -->
-                <div class="well well-lg offer-box offer-colors">
-
-
-                    <span class="glyphicon glyphicon-star-empty"></span>25 % off  , GRAB IT                 
-              
-                   <br />
-                    <br />
-                    <div class="progress progress-striped">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                            style="width: 70%">
-                            <span class="sr-only">70% Complete (success)</span>
-                            2hr 35 mins left
-                        </div>
+        <div class="main box-border" id="rayban" style="margin: 0px 0px 50px 0px;padding: 0px 0px 30px 20px;display: none;">
+            <h1 style="padding: 30px; font-size: 30px;">Ray-Ban Men's RB3025 Aviator Metal Aviator Sunglasses</h1>
+            <div class="col-md-6">
+                <div class="col-md-2">
+                    <div onclick="thumbnailImage_Click(this, 'rayban1.jpg');" class="thumbnail-normal">
+                        <img src="img/rayban thumb1.jpg" alt="" style="float: left;">
                     </div>
-                    <a href="#">click here to know more </a>
+                    <div onclick="thumbnailImage_Click(this, 'rayban2.jpg');" class="thumbnail-normal">
+                        <img src="img/rayban thumb2.jpg" alt="" style="float: left;">
+                    </div>
+                    <div onclick="thumbnailImage_Click(this, 'rayban3.jpg');" class="thumbnail-normal">
+                        <img src="img/rayban thumb3.jpg" alt="" style="float: left;">
+                    </div>
+                    <div onclick="thumbnailImage_Click(this, 'rayban4.jpg');" class="thumbnail-normal">
+                        <img src="img/rayban thumb4.jpg" alt="" style="float: left;">
+                    </div>
                 </div>
-                <!-- /.div -->
+                <div class="col-md-10">
+                    <img src="img/rayban1.jpg" alt="" style="float: left;" class="main-imgage">
+                </div>
+                <div style="clear: both;"></div>
             </div>
-            <!-- /.col -->
-            <div class="col-md-9">
-                <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li class="active">Electronics</li>
-                    </ol>
-                </div>
-                <!-- /.div -->
-                <div class="row">
-                    <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>1235  </strong>items</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-                                Sort Products &nbsp;
-								<span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">By Price Low</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Price High</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Popularity</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Reviews</a></li>
+            <div class="col-md-6">
+                <div class="" style="padding: 20px 0px 0px 0px; width: 100%; clear: both;">
+                    <div class="caption" style="float: left; padding: 0px 0px 0px 20px;">
+                        <p><strong>Đăng bởi:</strong> <a href="#" style="font-weight: bold;">Phúc Hà</a> (Đánh giá: 5 sao)</p>
+                        <p><strong>Ngày đăng:</strong> 11 tháng 4 năm 2017</p>
+                        <p><strong>Tình trạng:</strong> Mới 95%</p>
+                        <p><strong>Hãng sản xuất:</strong> <span style="font-weight: bold; color: green;">RayBan</span></p>
+                        <p><strong>Giá bán</strong> <span style="font-weight: bold; color: red;"> 2,300,000</span></p>
+                        <p>
+                            <strong>Ghi chú:</strong>
+                            Polished wire frames outline these classic Ray-Ban aviators, detailed with logo lettering at one lens. Polarized. Case and cleaning cloth included. 				    	 					
+                            <ul class="a-unordered-list a-vertical a-spacing-none">
+                                <li>
+                                    <span class="a-list-item">
+                                        Metal
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <span class="a-list-item">
+                                        Made in US
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="a-list-item">
+                                        metal frame
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="a-list-item">
+                                        Synthetic lens
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="a-list-item">
+                                        Polarized
+
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="a-list-item">
+                                        100% UV protection coating
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="a-list-item">
+                                        Lens width: 54.5 millimeters
+                                    </span>
+                                </li>
                             </ul>
-                        </div>
+                        </p>
+                        <p><strong>Tôi muốn:</strong></p>
+                        <p>
+                            <a href="#" class="btn btn-success" role="button" data-toggle="modal" data-target="#myModalMua">Mua</a>
+                            <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModalDoi">Đổi</a>
+                            <a href="#" class="btn btn-warning" role="button" data-toggle="modal" data-target="#myModalXin">Xin</a>
+                        </p>
                     </div>
                 </div>
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <ul class="pagination alg-right-pad">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-                <!-- /.row -->
-                <div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Clothing</a></li>
-                        <li class="active">Men's Clothing</li>
-                    </ol>
-                </div>
-                <!-- /.div -->
-                <div class="row">
-                    <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>3005  </strong>items</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Sort Products &nbsp;
-      <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">By Price Low</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Price High</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Popularity</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">By Reviews</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p>
-                                    <a href="#" class="btn btn-success" role="button">Add To Cart</a>
-                                    <a href="#" class="btn btn-primary" role="button">See Details</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
-                        <div class="thumbnail product-box">
-                            <img src="assets/img/dummyimg.png" alt="" />
-                            <div class="caption">
-                                <h3><a href="#">Samsung Galaxy </a></h3>
-                                <p>Price : <strong>$ 3,45,900</strong>  </p>
-                                <p><a href="#">Ptional dismiss button </a></p>
-                                <p>Ptional dismiss button in tional dismiss button in   </p>
-                                <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <!-- /.row -->
-                <div class="row">
-                    <ul class="pagination alg-right-pad">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-                <!-- /.row -->
+                <div style="clear: both;"></div>
             </div>
-            <!-- /.col -->
+            <div style="clear: both;"></div>
         </div>
         <!-- /.row -->
     </div>
@@ -864,15 +588,36 @@
 		}
 	</style>
     <script>
+        // Read a page's GET URL variables and return them as an associative array.
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
         $(function () {
 
             $('#mi-slider').catslider();
-			
+            var sanpham = getUrlVars()["san-pham"];
+            if (typeof sanpham != "undefined")
+            {
+                $("#" + sanpham).show();
+            }
+            else { }
+
+            $(".thumbnail-normal:visible:first").addClass("thumbnail-active");
         });
-		function thumbnailImage_Click(obj)
-		{
-			$(this).addClass("thumbnail-active");
+		function thumbnailImage_Click(obj, src)
+        {
+		    $(".thumbnail-active").removeClass("thumbnail-active");
+		    $(obj).addClass("thumbnail-active");
+		    $(".main-imgage:visible").attr("src", "img/" + src);
 		}
-		</script>
+	</script>
 </body>
 </html>
