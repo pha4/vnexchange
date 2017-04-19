@@ -2,7 +2,7 @@
 .mi-slider {
 	position: relative;
 	margin-top: 30px;
-	height: 440px;
+	height: 380px;
 }
 
 .mi-slider ul {
@@ -10,7 +10,7 @@
 	position: absolute;
 	width: 100%;
 	left: 0;
-	bottom: 140px;
+	bottom: 90px;
 	overflow: hidden;
 	text-align: center;
 	pointer-events: none;
@@ -30,7 +30,7 @@
 
 .mi-slider ul li {
 	display: inline-block;
-	padding: 20px;
+	padding: 5px;
 	width: 20%;
 	max-width: 300px;
 	-webkit-transform: translateX(600%);
@@ -56,7 +56,7 @@
 }
 
 .mi-slider ul li img {
-	width: 70%;
+	height: 120px;
 	border: none;
 }
 
@@ -75,7 +75,7 @@
 
 .mi-slider nav {
 	position: relative;
-	top: 400px;
+	top: 290px;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
@@ -90,7 +90,7 @@
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	padding: 40px 30px 30px 34px;
+	padding: 30px 30px 10px 34px;
 	position: relative;
 	color: #888;
 	outline: none;
