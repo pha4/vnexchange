@@ -60,7 +60,7 @@
 
                         <!-- logo -->
                         <div class="logo smooth-scroll" style="margin: 0px;">
-                            <a href="/index.html"><img id="logo" src="img/logo-redesign.png" alt="Worthy" style="height: 90px;"></a>
+                            <a href="index.html"><img id="logo" src="img/logo-redesign.png" alt="Worthy" style="height: 90px;"></a>
                         </div>
 
                         <!-- name-and-slogan -->
@@ -70,6 +70,7 @@
                         </div>
 
                     </div>
+                    
                     <!-- header-left end -->
 
                 </div>
@@ -100,11 +101,11 @@
 
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-                                        <ul class="nav navbar-nav navbar-right">
+                                        <ul class="nav navbar-nav navbar-right unauthenticated">
                                             <li><a href="#about">Đăng nhập</a></li>
                                             <li><a href="#portfolio">Đăng ký</a></li>
                                             <li><a href="#contact">Thông tin</a></li>
-                                        </ul>
+                                        </ul>                                        
                                     </div>
 
                                 </div>
@@ -184,8 +185,8 @@
             <!-- /.col -->
         </div>
         <!-- /.row -->
-		<div class="main box-border" id="cknude" style="margin: 0px 0px 50px 0px;padding: 0px 0px 30px 20px; display: none;">
-			<h1 style="padding: 30px; font-size: 30px;">Giày cao gót Charles & Keith, hồng nude chính hãng</h1>
+		<div class="main box-border" id="cknude" style="margin: 0px 0px 50px 0px;padding: 0px 0px 30px 20px; display: none;">            
+			<h1 style="padding: 30px; font-size: 30px;">Giày cao gót Charles & Keith, hồng nude chính hãng</h1>            
 			<div class="col-md-6">
 				<div class="col-md-2">
 					<div onclick="thumbnailImage_Click(this, 'cknude1.jpg');" class="thumbnail-normal">
@@ -612,7 +613,7 @@
                         <p><strong>Ngày đăng:</strong> 11 tháng 4 năm 2017</p>
                         <p><strong>Tình trạng:</strong> Mới 100%</p>
                         <p><strong>Hãng sản xuất:</strong> <span style="font-weight: bold; color: green;">Samsung</span></p>
-                        <p><strong>Giá bán</strong> <span style="font-weight: bold; color: red;"> 9,490,000</span></p>
+                        <p><strong>Giá bán</strong> <span style="font-weight: bold; color: red;"> 9,500,000</span></p>
                         <p>
                             <strong>Ghi chú:</strong>
                             <ul class="a-unordered-list a-vertical a-spacing-none">
@@ -1020,7 +1021,7 @@
             {
                 $("#" + sanpham).show();
             }
-            else { }
+            
 
             $(".thumbnail-normal:visible:first").addClass("thumbnail-active");
         });
@@ -1029,7 +1030,7 @@
 		    $(".thumbnail-active").removeClass("thumbnail-active");
 		    $(obj).addClass("thumbnail-active");
 		    $(".main-imgage:visible").attr("src", "img/" + src);
-		}
+		}		
 	</script>
 </body>
 </html>
