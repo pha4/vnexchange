@@ -720,3 +720,29 @@ textarea {
 .well.well-lg.offer-box.text-center {
     padding: 5px;
 }
+.landing.item{
+    font-size: 13px;
+    padding: 5px;
+}
+/*.item.item-summary {
+    height: 140px;
+}
+.item.thumbnail {
+    height: 141px;
+}*/
+.bold {
+    font-weight: bold;
+}
+.price {
+    font-weight: bold;
+    color: red;
+}
+.item.trade {
+    color: #ec971f;
+}
+.item.exchange {
+    color: #449d44;
+}
+.item.give {
+    color: #3071a9;
+}
