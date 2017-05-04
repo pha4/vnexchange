@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -30,17 +30,17 @@
     <!-- Custom css -->
     <link href="css/custom.css" rel="stylesheet">
     <style>
-        .exchange-product img
-        {
+        .exchange-product img {
             /*width: 166px;*/
         }
-        .exchange-product .product
-        {
+
+        .exchange-product .product {
             padding: 0px 0px 10px 0px;
         }
+
         .nopadding {
-           padding: 0 !important;
-           margin: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
         }
     </style>
 </head>
@@ -218,11 +218,11 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-									<li><a href="#">Tất cả</a></li>
+                                    <li><a href="javascript:void(0);" onclick="showAllItems(this);">Tất cả</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Cần</a></li>
+                                    <li><a href="javascript:void(0);" onclick="showDesiredItems(this);">Cần</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Có</a></li>
+                                    <li><a href="javascript:void(0);" onclick="showAvailableItems(this);">Có</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -397,21 +397,37 @@
                 </div>
                 <div class="row exchange-product" id="divAllCategories">
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding" style="position: relative;">
-							<img style="position: absolute;top: 10px;left: 10px;" src="img/desired.png"/>
-							<a href="chi-tiet.html?san-pham=cknude"><img src="img/cknude1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;" /></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator sell">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=cknude"><img src="img/cknude1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;" /></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=cknude">Giày cao gót Charles & Keith, hồng nude chính hãng</a></h3>
                             <p>Giày cao gót Charles & Keith, hồng nude chính hãng, hàng xách tay, ko có hộp...<a href="#">Xem thêm</a></p>
                             <p style="font-weight: bold;">Giá : <strong style="color: red;">3.200.000</strong>  </p>
                             <p style="font-weight: bold;"><a href="#">Ngô Đắc Lâm</a> - Tân Bình</p>
-                            <p><a href="#" class="btn btn-success" role="button">Mua</a> 
-							<a href="#" class="btn btn-primary" role="button">Đổi</a> 
-							<a href="#" class="btn btn-warning" role="button">Xin</a></p>
+                            <p>
+                                <a href="#" class="btn btn-success" role="button">Mua</a>
+                                <a href="#" class="btn btn-primary" role="button">Đổi</a>
+                                <a href="#" class="btn btn-warning" role="button">Xin</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=carkit"><img src="img/car.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator sell">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=carkit"><img src="img/car.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left; ">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=carkit">Xe hơi nhựa dành cho bé 5 tuổi trở lên</a></h3>
                             <p>Xe đồ chơi rất dễ thương, bền...<a>Xem thêm</a></p>
@@ -421,7 +437,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=rayban"><img src="img/rayban1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator sell swap">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=rayban"><img src="img/rayban1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left; ">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=rayban">Mắt kính nam Ray-Ban RB3025 Aviator gọng kim loại</a></h3>
                             <p>Mắt kính nam, màu đen nâu, rất phong cách...<a>Xem thêm</a></p>
@@ -430,12 +454,18 @@
                             <p><a href="#" class="btn btn-success" role="button">Mua</a> <a href="#" class="btn btn-primary" role="button">Đổi</a> <a href="#" class="btn btn-warning" role="button">Xin</a></p>
                         </div>
                     </div>
-					<div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding">							
-							<a href="chi-tiet.html?san-pham=galaxytab">
-								<img src="img/galaxytab1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"/>
-							</a>
-						</div>
+                    <div class="col-md-12 product" style="width: 100%; clear: both;">
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator desire">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=galaxytab">
+                                <img src="img/galaxytab1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;" />
+                            </a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left; ">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=galaxytab">Samsung Galaxy TAB 3 Lite 7" T110 8GB Wi-Fi</a></h3>
                             <p>Máy tính bảng Samsung Galaxy Tab 3, màn hình 7", Wifi...<a>Xem thêm</a></p>
@@ -444,8 +474,16 @@
                             <p><a href="#" class="btn btn-success" role="button">Mua</a> <a href="#" class="btn btn-primary" role="button">Đổi</a> <a href="#" class="btn btn-warning" role="button">Xin</a></p>
                         </div>
                     </div>
-					<div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=nautica"><img src="img/nautica1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                    <div class="col-md-12 product" style="width: 100%; clear: both;">
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator give">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=nautica"><img src="img/nautica1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left; ">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=nautica">Áo liền quần Nautica xanh biển</a></h3>
                             <p>Áo liền quần Nautica xanh biển...<a>Xem thêm</a></p>
@@ -458,7 +496,15 @@
 
                 <div class="row exchange-product" id="divWomenClothes" style="display:none;">
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=nautica"><img src="img/nautica1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;" /></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=nautica"><img src="img/nautica1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;" /></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=nautica">Áo liền quần Nautica xanh biển</a></h3>
                             <p>Áo dành mặc ở nhà cho bạn nữ tuổi từ 18 - 30, màu sắc rất tươi trẻ, giá phải chăng...<a>Xem thêm</a></p>
@@ -468,7 +514,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=gymboree"><img src="img/gymboree1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=gymboree"><img src="img/gymboree1.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=gymboree">Áo mèo con đeo tai thỏ</a></h3>
                             <p>Dành cho các bạn từ 1m60 trở lên, màu sắc trẻ trung...<a>Xem thêm</a></p>
@@ -478,7 +532,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/pink set.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/pink set.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Set quần sóc áo CK hồng phấn cho bạn nữ</a></h3>
                             <p>Màu hồng phấn cực dễ thương, do hơi chật nên mình để lại giá tốt cho bạn nào thực sự thích...<a>Xem thêm</a></p>
@@ -488,7 +550,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/jean set.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/jean set.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Set quần sóc áo CK hồng phấn cho bạn nữ</a></h3>
                             <p>Màu hồng phấn cực dễ thương, do hơi chật nên mình để lại giá tốt cho bạn nào thực sự thích...<a>Xem thêm</a></p>
@@ -498,7 +568,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/blue dress.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/blue dress.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Set quần sóc áo CK hồng phấn cho bạn nữ</a></h3>
                             <p>Màu hồng phấn cực dễ thương, do hơi chật nên mình để lại giá tốt cho bạn nào thực sự thích...<a>Xem thêm</a></p>
@@ -511,7 +589,15 @@
 
                 <div class="row exchange-product" id="divKidToys" style="display:none;">
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=carkit"><img src="img/car.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=carkit"><img src="img/car.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left; ">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="chi-tiet.html?san-pham=carkit">Xe hơi nhựa dành cho bé 5 tuổi trở lên</a></h3>
                             <p>Xe đồ chơi rất dễ thương, bền<a>Xem thêm</a></p>
@@ -521,7 +607,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><a href="chi-tiet.html?san-pham=kidoozie"><img src="img/jumper.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <a href="chi-tiet.html?san-pham=kidoozie"><img src="img/jumper.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></a>
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Bật nhảy dành cho trẻ em</a></h3>
                             <p>Phù hợp cho bé từ 5-7 tuổi, rất bền, nhảy thoải mái ko sợ hư...<a>Xem thêm</a></p>
@@ -531,7 +625,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/bino.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/bino.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Ống nhòm cực nét giá cực sốc</a></h3>
                             <p>Một món đồ chơi tuyệt vời cho các em nhỏ từ 5 đến 10 tuổi. Có thể nhòm xa đến khoảng cách 300m với hình ảnh ro ràng. Giá sốc nhât trên thị trường...<a>Xem thêm</a></p>
@@ -541,7 +643,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/drum.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/drum.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Set quần sóc áo CK hồng phấn cho bạn nữ</a></h3>
                             <p>Màu hồng phấn cực dễ thương, do hơi chật nên mình để lại giá tốt cho bạn nào thực sự thích...<a>Xem thêm</a></p>
@@ -551,7 +661,15 @@
                         </div>
                     </div>
                     <div class="col-md-12 product" style="width: 100%; clear: both;">
-                        <div class="col-md-3 nopadding"><img src="img/watch.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;"></div>
+                        <div class="col-md-3 nopadding product image-container">
+                            <div class="product indicator">
+                                <img src="img/money.png" />
+                                <img src="img/swap.png" />
+                                <img src="img/binocular.png" />
+                                <img src="img/give.png" />
+                            </div>
+                            <img src="img/watch.jpg" alt="" style="border: 1px solid #e1e1e1; float: left;">
+                        </div>
                         <div class="col-md-9 caption" style="float: left;">
                             <h3 style="margin: 0px 0px 5px 0px"><a href="#">Set quần sóc áo CK hồng phấn cho bạn nữ</a></h3>
                             <p>Màu hồng phấn cực dễ thương, do hơi chật nên mình để lại giá tốt cho bạn nào thực sự thích...<a>Xem thêm</a></p>
@@ -1016,9 +1134,56 @@
                 $("#spanSeperator").hide();
             }
 
+            $(".product.indicator.swap").each(function (index, ele) {
+                $(ele).find("img[src*='swap']").show();
+            });
+
+            $(".product.indicator.sell").each(function (index, ele) {
+                $(ele).find("img[src*='money']").show();
+            });
+
+            $(".product.indicator.desire").each(function (index, ele) {
+                $(ele).find("img[src*='binocular']").show();
+            });
+
+            $(".product.indicator.give").each(function (index, ele) {
+                $(ele).find("img[src*='give']").show();
+            });
             //Make slider auto switch after every 5s
             //switchSlider();
-        });
+        });        
+
+        function showDesiredItems(obj) {
+            $(".product.indicator").each(function(index, ele){
+                $(ele).parents(".product").last().hide();
+            });
+
+            $(".product.indicator.desire").each(function(index, ele){
+                $(ele).parents(".product").last().show();
+            });
+
+            $(obj).closest(".btn-group").find("button").text($(obj).text());
+        };
+
+        function showAvailableItems(obj) {
+            $(".product.indicator").each(function (index, ele) {
+                $(ele).parents(".product").last().hide();
+            });
+
+            $(".product.indicator.swap, .product.indicator.sell, .product.indicator.give").each(function (index, ele) {
+                $(ele).parents(".product").last().show();
+            });
+
+            $(obj).closest(".btn-group").find("button").text($(obj).text());
+        };
+
+        function showAllItems(obj) {
+            $(".product.indicator").each(function (index, ele) {
+                $(ele).parents(".product").last().show();
+            });
+
+            $(obj).closest(".btn-group").find("button").text($(obj).text());
+        };
 
         function switchSlider() {
             setTimeout(function () {
