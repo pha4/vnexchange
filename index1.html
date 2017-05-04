@@ -1120,7 +1120,7 @@
             $("#spanCategoryText").text(categoryText);
             $("#h4Category").text($("#h4Category").text() + " " + categoryText);
             if (typeof category != "undefined") {
-                $("#mi-slider").parent().hide();
+                //$("#mi-slider").parent().hide();
                 $("#breadcrumb").text(categoryText);
                 $("#divAllCategories").hide();
                 if (category == "2") {
@@ -1150,7 +1150,7 @@
                 $(ele).find("img[src*='give']").show();
             });
             //Make slider auto switch after every 5s
-            //switchSlider();
+            switchSlider();
         });        
 
         function showDesiredItems(obj) {
@@ -1171,7 +1171,9 @@
             });
 
             $(".product.indicator.swap, .product.indicator.sell, .product.indicator.give").each(function (index, ele) {
-                $(ele).parents(".product").last().show();
+                var product = $(ele).parents(".product").last();
+                product.show();
+                product.find("button");
             });
 
             $(obj).closest(".btn-group").find("button").text($(obj).text());
