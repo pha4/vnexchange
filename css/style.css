@@ -758,3 +758,6 @@ textarea {
 .product.image-container {
     position: relative;
 }
+.exchange-product a.btn {
+    display: none;
+}
